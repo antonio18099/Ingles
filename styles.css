@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("assets/imagenes/fondo2.jpg");
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #1e1e1e;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+section h2{
+    color: #ffcc00;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5em; /* Tamaño más grande para el título */
+}
+h3{
+    color: #ffcc00;
+    margin: 0;
+    font-size: 1em;
+}
+section input[type="checkbox"] {
+    display: none;
+}
+
+section .contenido {
+    display: none;
+    margin-top: 10px;
+}
+
+section input[type="checkbox"]:checked ~ .contenido {
+    display: block;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0; /* Más espacio alrededor de la imagen */
+        width: 200px; /* Ancho específico de la imagen */
+        height: 250px; /* Alto específico de la imagen */
+        margin-right: 20px; /* Espacio entre la imagen y el texto */
+        flex: 0 0 auto; /* Evitar que la imagen crezca o se encoja */
+    }
+    
+
+
+section p {
+    font-size: 1.2em; /* Tamaño más grande para el texto del párrafo */
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
