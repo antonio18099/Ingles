@@ -3,45 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header>
-        <h1>Welcome to my page!</h1>
-        <p>Hello everyone, this is a page to learn a little about me, about my tastes, what I do in my free time, about my work and my tastes.</p>
+        <h1>Welcome to my website</h1>
     </header>
-    <main>
-        <section id="sobre-mi">
-            <input type="checkbox" id="toggle-sobre-mi">
-            <label for="toggle-sobre-mi"><h2>About me</h2></label>
-            <div class="contenido">
-                <img src="assets/imagenes/yo.jpg" alt="Imagen sobre mí">
-                <p> Hello, I'm Antonio, I'm 18 years old. I am a SENA student and I work in a restaurant some days of the week. I love music, video games and women ;)</p>
-            <h3>hobbies</h3>
-            <p>I like playing video games, listening to music, going for walks, and nature.</p>
+    <section class="hero">
+        <img src="assets/imagenes/yo.PNG" alt="Imagen de Portada">
+        <p>I am Antonio José Rodríguez Sánchez, I am 18 years old and I live in Armenia, Quindío. I study Software Analysis and Development. Enjoy listening to music and playing video games.</p>
+    </section>
+    <section class="projects">
+        <h2></h2>
+        <div class="project" onclick="toggleProject(this)">
+            <h3 class="h3">  About me</h3>
+            <div class="project-content">
+                    <p class="p-p">Hello, I'm Antonio, I'm 18 years old. I am a SENA student and I work in a restaurant some days of the week. I love music, video games and women ;)</p>
+                    <h4 class="h3">hobbies</h4>
+                    <p class="p-p">I like playing video games, listening to music, going for walks, and nature.</p>
             </div>
-        </section>
-        <section id="sobre-el-programa">
-            <input type="checkbox" id="toggle-sobre-el-programa">
-            <label for="toggle-sobre-el-programa"><h2>About the program</h2></label>
-            <div class="contenido">
-                <img src="assets/imagenes/programa.jpg" alt="Imagen del programa">
-                <p>I chose this program because since I was little, everything related to computers and technology has always caught my attention.</p>
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <h3 class="h3">About the program</h3>
+            <div class="project-content">
+                <p class="p-p">I chose this program because since I was little, everything related to computers and technology has always caught my attention.</p>
             </div>
-        </section>
-        <!-- <section id="actividades">
-            <input type="checkbox" id="togge-de-actividades">
-            <label for="toggle-de-antividades"><h2>activitis</h2></label>
-            <div>
-                <img src="#" alt="imagen sobre las actividades">
-                    <p>aaa  </p>
-                </img>
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <h3 class="h3">About the survey</h3>
+            <p></p>
+            <div class="project-content">
+                <p class="p-p">This summary shows a variety of Internet behaviors and uses among the 8 respondents. Most use smartphones and spend between 11 and 50 hours a week online, using the Internet for work, study and play. The most common online activities include watching movies, downloading videos, paying bills, and staying in touch with family and friends.</p>
+                <video controls>
+                    <source src="ruta-video-proyecto3.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>  
+        </div>
+        <div class="project" onclick="toggleProject(this)">
+            <h3 class="h3"  >Proyecto 4</h3>
+            <p></p>
+            <div class="project-content">
+                <p class="p-p">Más información sobre el proyecto 3...</p>
             </div>
-        </section> -->
-    </main>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Mi Página. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/antonioszx_/"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://github.com/antonio18099"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://web.facebook.com/profile.php?id=100011498852293&locale=es_LA"><i class='bx bxl-facebook-circle'></i></a></li>
+        </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
